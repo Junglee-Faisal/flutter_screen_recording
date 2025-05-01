@@ -33,7 +33,7 @@ apply plugin: 'kotlin-android'
 android {
     compileSdkVersion 34
 
-    if(project.android.hasProperty('namespce')) {
+    if (project.android.hasProperty('namespace')) {
         namespace 'com.isvisoft.flutter_screen_recording'
     } 
 
