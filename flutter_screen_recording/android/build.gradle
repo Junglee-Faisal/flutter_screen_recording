@@ -33,6 +33,10 @@ apply plugin: 'kotlin-android'
 android {
     compileSdkVersion 34
 
+    if(project.android.hasProperty('namespce')) {
+        namespace 'com.isvisoft.flutter_screen_recording'
+    } 
+
     sourceSets {
         main.java.srcDirs += 'src/main/kotlin'
     }
